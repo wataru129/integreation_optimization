@@ -2,8 +2,8 @@
 w_pso   = 0.729;
 c1      = 1.4955;
 c2      = 1.4955;
-m       = 40;      %The number of Particle
-k_max   = 400;     % Max of reiteration
+m       = 30;      %The number of Particle
+k_max   = 200;     % Max of reiteration
 %%%%%%%%%%%%%%%%%%
 
 %%%PSO-Algolism%%%%%
