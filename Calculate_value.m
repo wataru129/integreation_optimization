@@ -2,8 +2,7 @@ function f_out=Calculate_value(x)
 %ベンチマーク問題
 global f_number;
 n=length(x); %xの次元
-%disp(n);
-%disp(f_number);
+
 f_out=0;
     switch f_number
         case 1 %%% 対象1 %%%
