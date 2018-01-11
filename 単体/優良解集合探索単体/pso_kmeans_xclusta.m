@@ -7,7 +7,7 @@ Trial=10;
 clusta =5;
 th=1;
 %%%PSO-parameter%%%%%%%
-%w   = 0.729;
+w   = 0.729;
 %w   = 0.7;
 c1  = 1.4955;
 c2  = 1.4955;
@@ -45,7 +45,7 @@ for T = 1:Trial
             end
         end
         for k=1:k_max
-            w=1/(8*k)+0.7;
+%            w=1/(8*k)+0.7;
             temp_fpbest=zeros(1,m);
             for i=1:class(c_index)
                 v(:,i)=w*v(:,i)+c1*rand*(pbest(:,i)-x(:,i))+c2*rand*(gbest-x(:,i));
