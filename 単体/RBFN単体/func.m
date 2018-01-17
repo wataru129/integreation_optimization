@@ -2,7 +2,7 @@ function Z = func(x)
   Z = 0;
   X1 = x(1);
   X2 = x(2);
-  f_number = 4;
+  f_number = 3;
 switch f_number
     case 1 %%%対象1%%%
         Z=X1.^2+X2.^2;

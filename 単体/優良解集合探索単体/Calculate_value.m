@@ -1,6 +1,6 @@
-function f_out=Calculate_value(x)
+function f_out=Calculate_value(x,C)
 %ベンチマーク問題
-global C;
+%global C;
 n=length(x); %xの次元
 f_out=0;
     switch C

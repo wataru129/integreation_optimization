@@ -73,9 +73,9 @@ fprintf('*******Create Graph *******************\n')
 x1=linspace(-5,5)';
 x2=linspace(-5,5)';
 [X1,X2]=meshgrid(x1,x2);
-
-
 Z=zeros(100,100);
+
+%{
 for i = 1:100
     for j =1:100
         for k1=1:sample_num
@@ -85,7 +85,14 @@ for i = 1:100
         end
     end
 end
-
+%}
+for i = 1:100
+    for j =1:100
+        n= [X1(1,j),X2(i,1)].';
+        x_ex = repelem(n,1,sample_num) ;
+        Z(j,i)  = exp(-sum((x_ex - rbf_mid).^2) / (r^2)) * omega;
+    end
+end
 
 figure(1);surf(X1,X2,Z);
 figure(1);
